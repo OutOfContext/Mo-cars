@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mocars – Auto Detailing & Fahrzeugveredelung in Moers</title>
+  <meta name="description" content="Mocars in Moers – Ihr Spezialist für professionelles Auto Detailing, Scheibentönung, Aufbereitung und Glasservice. Premium-Qualität für Ihr Fahrzeug." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container header-inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="logo" aria-label="Mocars – zur Startseite">
+        <span class="logo-main">Mo<span class="logo-accent">cars</span></span>
+        <span class="logo-tagline">Auto Detailing · Moers</span>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <ul role="list">
+          <li><a href="#leistungen">Leistungen</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#warum-mocars">Über uns</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <!-- Phone + CTA (desktop) -->
+      <div class="header-cta">
+        <a href="tel:+491234567890" class="header-phone" aria-label="Jetzt anrufen: +49 123 456 78 90">
+          <svg class="icon-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.48 12 19.79 19.79 0 0 1 1.41 3.41 2 2 0 0 1 3.4 1.25h3a2 2 0 0 1 2 1.72c.13 1 .38 1.97.74 2.9a2 2 0 0 1-.45 2.11L7.91 8.76a16 16 0 0 0 6.29 6.29l.78-.78a2 2 0 0 1 2.11-.45c.93.36 1.9.61 2.9.74A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          +49 123 456 78 90
+        </a>
+        <a href="#kontakt" class="btn btn-primary btn-sm">Termin vereinbaren</a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#leistungen" class="mobile-nav-link">Leistungen</a></li>
+        <li><a href="#galerie" class="mobile-nav-link">Galerie</a></li>
+        <li><a href="#warum-mocars" class="mobile-nav-link">Über uns</a></li>
+        <li><a href="#kontakt" class="mobile-nav-link">Kontakt</a></li>
+      </ul>
+      <a href="tel:+491234567890" class="mobile-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.48 12 19.79 19.79 0 0 1 1.41 3.41 2 2 0 0 1 3.4 1.25h3a2 2 0 0 1 2 1.72c.13 1 .38 1.97.74 2.9a2 2 0 0 1-.45 2.11L7.91 8.76a16 16 0 0 0 6.29 6.29l.78-.78a2 2 0 0 1 2.11-.45c.93.36 1.9.61 2.9.74A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +49 123 456 78 90
+      </a>
+      <a href="#kontakt" class="btn btn-primary mobile-nav-cta">Termin vereinbaren</a>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero" aria-label="Willkommen bei Mocars">
+    <!-- Background image placeholder -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-overlay"></div>
+      <img
+        src="images/hero-bg.jpg"
+        alt=""
+        class="hero-img"
+        loading="eager"
+      />
+    </div>
+
+    <div class="container hero-content">
+      <!-- Phone (visible in hero) -->
+      <a href="tel:+491234567890" class="hero-phone reveal" aria-label="Jetzt anrufen: +49 123 456 78 90">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.48 12 19.79 19.79 0 0 1 1.41 3.41 2 2 0 0 1 3.4 1.25h3a2 2 0 0 1 2 1.72c.13 1 .38 1.97.74 2.9a2 2 0 0 1-.45 2.11L7.91 8.76a16 16 0 0 0 6.29 6.29l.78-.78a2 2 0 0 1 2.11-.45c.93.36 1.9.61 2.9.74A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +49 123 456 78 90
+      </a>
+
+      <div class="hero-text">
+        <p class="hero-eyebrow reveal">Auto Detailing · Moers</p>
+        <h1 class="hero-headline reveal">
+          Ihr Fahrzeug.<br />
+          <span class="text-accent">Perfekt gepflegt.</span>
+        </h1>
+        <p class="hero-subheadline reveal">
+          Professionelle Fahrzeugveredelung in Moers – mit Präzision,
+          Leidenschaft und Premium-Materialien. Wir bringen Ihr Auto auf
+          ein neues Level.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#kontakt" class="btn btn-primary btn-lg">Jetzt Termin vereinbaren</a>
+          <a href="#leistungen" class="btn btn-ghost btn-lg">Unsere Leistungen</a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-label">Entdecken</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LEISTUNGEN ===================== -->
+  <section class="section services" id="leistungen" aria-labelledby="services-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-eyebrow">Was wir tun</p>
+        <h2 id="services-heading">Unsere Leistungen</h2>
+        <p class="section-subtitle">
+          Drei Kernbereiche. Ein Anspruch: Perfektion.
+        </p>
+      </header>
+
+      <div class="services-grid">
+
+        <!-- Service 1: Scheibentönung -->
+        <article class="service-card reveal" aria-labelledby="service-1-heading">
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="3" y1="15" x2="21" y2="15"/>
+            </svg>
+          </div>
+          <div class="service-card-body">
+            <h3 id="service-1-heading">Scheibentönung</h3>
+            <p>
+              Exklusiver Sicht- und UV-Schutz für Ihr Fahrzeug. Unsere
+              professionelle Scheibentönung vereint Ästhetik mit Funktion –
+              für mehr Privatsphäre, reduzierten Wärmeeintrag und ein
+              unverwechselbares Erscheinungsbild.
+            </p>
+            <ul class="service-benefits" aria-label="Vorteile Scheibentönung">
+              <li>UV-Schutz bis zu 99 %</li>
+              <li>Wärmereduktion im Innenraum</li>
+              <li>Blendschutz & Privatsphäre</li>
+              <li>Professionelle Zertifizierung</li>
+            </ul>
+            <a href="#kontakt" class="btn btn-outline">Anfragen</a>
+          </div>
+        </article>
+
+        <!-- Service 2: Aufbereitung -->
+        <article class="service-card service-card--featured reveal" aria-labelledby="service-2-heading">
+          <div class="service-card-badge">Beliebt</div>
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2a10 10 0 0 1 7.07 17.07"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <div class="service-card-body">
+            <h3 id="service-2-heading">Aufbereitung</h3>
+            <p>
+              Vollständige Innen- und Außenaufbereitung auf
+              Premium-Niveau. Wir entfernen Kratzer, polieren die
+              Oberfläche auf Hochglanz und versiegeln den Lack – damit
+              Ihr Fahrzeug glänzt wie am ersten Tag.
+            </p>
+            <ul class="service-benefits" aria-label="Vorteile Aufbereitung">
+              <li>Lackpolitur & Tiefenreinigung</li>
+              <li>Kratzerentfernung & Korrektur</li>
+              <li>Keramikversiegelung verfügbar</li>
+              <li>Innenraum-Komplettaufbereitung</li>
+            </ul>
+            <a href="#kontakt" class="btn btn-primary">Anfragen</a>
+          </div>
+        </article>
+
+        <!-- Service 3: Glasservice -->
+        <article class="service-card reveal" aria-labelledby="service-3-heading">
+          <div class="service-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <div class="service-card-body">
+            <h3 id="service-3-heading">Glasservice</h3>
+            <p>
+              Klare Sicht für mehr Sicherheit. Unser Glasservice umfasst
+              professionelle Glasreinigung, Hydrophobbeschichtung und
+              die Reparatur kleinerer Steinschläge – schnell, sauber und
+              dauerhaft.
+            </p>
+            <ul class="service-benefits" aria-label="Vorteile Glasservice">
+              <li>Hydrophobbeschichtung</li>
+              <li>Steinschlag-Reparatur</li>
+              <li>Kristallklare Scheibenpflege</li>
+              <li>Verbesserte Sicherheit</li>
+            </ul>
+            <a href="#kontakt" class="btn btn-outline">Anfragen</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIE / VORHER-NACHHER ===================== -->
+  <section class="section gallery" id="galerie" aria-labelledby="gallery-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-eyebrow">Referenzen</p>
+        <h2 id="gallery-heading">Vorher & Nachher</h2>
+        <p class="section-subtitle">
+          Überzeugen Sie sich selbst. Echte Ergebnisse – sichtbarer Unterschied.
+        </p>
+        <p class="gallery-hint reveal" aria-label="Interaktionshinweis">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="icon-touch">
+            <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+          </svg>
+          Bewegen Sie den Mauszeiger über ein Bild – oder tippen Sie auf mobilen Geräten.
+        </p>
+      </header>
+
+      <div class="gallery-grid">
+
+        <!-- Gallery Item 1 – Scheibentönung -->
+        <div class="gallery-item reveal" role="img" aria-label="Vorher-Nachher: Scheibentönung">
+          <div class="gallery-media">
+            <img
+              src="images/gallery-toenung-before.jpg"
+              alt="Fahrzeugscheibe vor der Tönung – ohne Schutz"
+              class="gallery-img gallery-img--before"
+              loading="lazy"
+            />
+            <img
+              src="images/gallery-toenung-after.jpg"
+              alt="Fahrzeugscheibe nach der professionellen Tönung – eleganter dunkler Effekt"
+              class="gallery-img gallery-img--after"
+              loading="lazy"
+              aria-hidden="true"
+            />
+            <div class="gallery-badge" aria-hidden="true">
+              <span class="badge-before">Vorher</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+              <span class="badge-after">Nachher</span>
+            </div>
+            <div class="gallery-hint-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+          </div>
+          <p class="gallery-label">Scheibentönung</p>
+        </div>
+
+        <!-- Gallery Item 2 – Lackaufbereitung -->
+        <div class="gallery-item reveal" role="img" aria-label="Vorher-Nachher: Lackaufbereitung">
+          <div class="gallery-media">
+            <img
+              src="images/gallery-lack-before.jpg"
+              alt="Fahrzeuglack vor der Aufbereitung – matt und verkratzt"
+              class="gallery-img gallery-img--before"
+              loading="lazy"
+            />
+            <img
+              src="images/gallery-lack-after.jpg"
+              alt="Fahrzeuglack nach der Politur – glänzend und makellos"
+              class="gallery-img gallery-img--after"
+              loading="lazy"
+              aria-hidden="true"
+            />
+            <div class="gallery-badge" aria-hidden="true">
+              <span class="badge-before">Vorher</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+              <span class="badge-after">Nachher</span>
+            </div>
+            <div class="gallery-hint-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+          </div>
+          <p class="gallery-label">Lackaufbereitung</p>
+        </div>
+
+        <!-- Gallery Item 3 – Glasservice -->
+        <div class="gallery-item reveal" role="img" aria-label="Vorher-Nachher: Glasservice">
+          <div class="gallery-media">
+            <img
+              src="images/gallery-glas-before.jpg"
+              alt="Fahrzeugscheibe vor dem Glasservice – verschmutzt und stark beschlagen"
+              class="gallery-img gallery-img--before"
+              loading="lazy"
+            />
+            <img
+              src="images/gallery-glas-after.jpg"
+              alt="Fahrzeugscheibe nach dem Glasservice – kristallklar und hydrophob beschichtet"
+              class="gallery-img gallery-img--after"
+              loading="lazy"
+              aria-hidden="true"
+            />
+            <div class="gallery-badge" aria-hidden="true">
+              <span class="badge-before">Vorher</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+              <span class="badge-after">Nachher</span>
+            </div>
+            <div class="gallery-hint-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+          </div>
+          <p class="gallery-label">Glasservice</p>
+        </div>
+
+        <!-- Gallery Item 4 – Innenreinigung -->
+        <div class="gallery-item reveal" role="img" aria-label="Vorher-Nachher: Innenreinigung">
+          <div class="gallery-media">
+            <img
+              src="images/gallery-innen-before.jpg"
+              alt="Fahrzeuginnenraum vor der Aufbereitung – verschmutzt"
+              class="gallery-img gallery-img--before"
+              loading="lazy"
+            />
+            <img
+              src="images/gallery-innen-after.jpg"
+              alt="Fahrzeuginnenraum nach der Innenreinigung – makellos sauber"
+              class="gallery-img gallery-img--after"
+              loading="lazy"
+              aria-hidden="true"
+            />
+            <div class="gallery-badge" aria-hidden="true">
+              <span class="badge-before">Vorher</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+              <span class="badge-after">Nachher</span>
+            </div>
+            <div class="gallery-hint-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+          </div>
+          <p class="gallery-label">Innenreinigung</p>
+        </div>
+
+      </div><!-- /gallery-grid -->
+    </div>
+  </section>
+
+  <!-- ===================== WARUM MOCARS ===================== -->
+  <section class="section why-mocars" id="warum-mocars" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-text reveal">
+          <p class="section-eyebrow">Unser Versprechen</p>
+          <h2 id="why-heading">Warum Mocars?</h2>
+          <p class="why-intro">
+            Wir sind kein gewöhnlicher Autoservice. Wir sind Perfektionisten –
+            mit einem Auge für Details, das den Unterschied macht.
+          </p>
+          <a href="#kontakt" class="btn btn-primary">Jetzt Termin vereinbaren</a>
+        </div>
+
+        <ul class="why-list" aria-label="Unsere Stärken">
+          <li class="why-item reveal">
+            <div class="why-item-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div class="why-item-content">
+              <h3>Präzise Handarbeit</h3>
+              <p>Jedes Fahrzeug wird mit Hand und Herz bearbeitet – kein Fließband, sondern echte Handwerkskunst.</p>
+            </div>
+          </li>
+          <li class="why-item reveal">
+            <div class="why-item-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="why-item-content">
+              <h3>Hochwertige Ergebnisse</h3>
+              <p>Wir verwenden ausschließlich professionelle Produkte und modernste Techniken für sichtbare Ergebnisse.</p>
+            </div>
+          </li>
+          <li class="why-item reveal">
+            <div class="why-item-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="why-item-content">
+              <h3>Individuelle Beratung</h3>
+              <p>Jedes Fahrzeug ist anders. Wir beraten Sie persönlich und finden die beste Lösung für Ihre Bedürfnisse.</p>
+            </div>
+          </li>
+          <li class="why-item reveal">
+            <div class="why-item-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <div class="why-item-content">
+              <h3>Werterhalt Ihres Fahrzeugs</h3>
+              <p>Professionelle Pflege schützt Ihren Wert. Unser Service erhält die Optik und den Wiederverkaufswert nachhaltig.</p>
+            </div>
+          </li>
+          <li class="why-item reveal">
+            <div class="why-item-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="why-item-content">
+              <h3>Zuverlässigkeit & Pünktlichkeit</h3>
+              <p>Vereinbarte Termine werden eingehalten. Ihr Fahrzeug ist zu dem Zeitpunkt fertig, den wir gemeinsam festgelegt haben.</p>
+            </div>
+          </li>
+          <li class="why-item reveal">
+            <div class="why-item-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div class="why-item-content">
+              <h3>Lokaler Premium-Service</h3>
+              <p>Direkt in Moers – persönlich, transparent und mit dem Anspruch, den Sie von einem Premiumdienstleister erwarten.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KONTAKT ===================== -->
+  <section class="section contact" id="kontakt" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-inner">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <p class="section-eyebrow">Kontakt aufnehmen</p>
+          <h2 id="contact-heading">Jetzt Termin vereinbaren</h2>
+          <p class="contact-intro">
+            Kontaktieren Sie uns direkt – wir beraten Sie gerne persönlich
+            und finden schnell einen passenden Termin für Sie.
+          </p>
+
+          <a href="tel:+491234567890" class="contact-phone" aria-label="Jetzt anrufen: +49 123 456 78 90">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.48 12 19.79 19.79 0 0 1 1.41 3.41 2 2 0 0 1 3.4 1.25h3a2 2 0 0 1 2 1.72c.13 1 .38 1.97.74 2.9a2 2 0 0 1-.45 2.11L7.91 8.76a16 16 0 0 0 6.29 6.29l.78-.78a2 2 0 0 1 2.11-.45c.93.36 1.9.61 2.9.74A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            +49 123 456 78 90
+          </a>
+
+          <!-- WhatsApp CTA -->
+          <a
+            href="https://wa.me/491234567890"
+            class="contact-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Auf WhatsApp schreiben"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+            </svg>
+            Auf WhatsApp schreiben
+          </a>
+
+          <div class="contact-address">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <div>
+              <strong>Mocars Auto Detailing</strong><br />
+              Musterstraße 1<br />
+              47441 Moers
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contact-form" novalidate aria-label="Terminanfrage">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Name *</label>
+                <input
+                  type="text"
+                  id="form-name"
+                  name="name"
+                  placeholder="Ihr vollständiger Name"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="form-phone">Telefon *</label>
+                <input
+                  type="tel"
+                  id="form-phone"
+                  name="phone"
+                  placeholder="Ihre Telefonnummer"
+                  required
+                  autocomplete="tel"
+                  aria-required="true"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email">E-Mail</label>
+              <input
+                type="email"
+                id="form-email"
+                name="email"
+                placeholder="Ihre E-Mail-Adresse"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="form-service">Gewünschte Leistung *</label>
+              <select id="form-service" name="service" required aria-required="true">
+                <option value="" disabled selected>Bitte wählen …</option>
+                <option value="scheibentoenung">Scheibentönung</option>
+                <option value="aufbereitung">Aufbereitung</option>
+                <option value="glasservice">Glasservice</option>
+                <option value="sonstiges">Sonstiges</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Nachricht</label>
+              <textarea
+                id="form-message"
+                name="message"
+                rows="4"
+                placeholder="Beschreiben Sie Ihr Anliegen (optional)"
+              ></textarea>
+            </div>
+
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" name="privacy" required aria-required="true" />
+                <span class="checkbox-custom" aria-hidden="true"></span>
+                <span>
+                  Ich habe die
+                  <a href="#footer" class="form-link">Datenschutzerklärung</a>
+                  gelesen und bin mit der Verarbeitung meiner Daten einverstanden. *
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-full">
+              Termin anfragen
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </button>
+
+            <p class="form-note">* Pflichtfelder. Wir melden uns schnellstmöglich bei Ihnen.</p>
+
+            <!-- Success / Error Message (shown via JS) -->
+            <div class="form-feedback" id="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="logo" aria-label="Mocars – zur Startseite">
+            <span class="logo-main">Mo<span class="logo-accent">cars</span></span>
+            <span class="logo-tagline">Auto Detailing · Moers</span>
+          </a>
+          <p class="footer-brand-text">
+            Professionelle Fahrzeugpflege &amp; Veredelung in Moers.
+            Qualität, die man sieht – und spürt.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="footer-nav" aria-label="Footer-Navigation">
+          <h4>Navigation</h4>
+          <ul role="list">
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#warum-mocars">Über uns</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <!-- Services -->
+        <nav class="footer-nav" aria-label="Leistungen-Navigation">
+          <h4>Leistungen</h4>
+          <ul role="list">
+            <li><a href="#leistungen">Scheibentönung</a></li>
+            <li><a href="#leistungen">Aufbereitung</a></li>
+            <li><a href="#leistungen">Glasservice</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+          <h4>Kontakt</h4>
+          <address>
+            <p>Musterstraße 1<br />47441 Moers</p>
+            <p>
+              <a href="tel:+491234567890">+49 123 456 78 90</a>
+            </p>
+            <p>
+              <a href="mailto:info@mocars-moers.de">info@mocars-moers.de</a>
+            </p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="footer-year">2024</span> Mocars Auto Detailing · Moers. Alle Rechte vorbehalten.
+        </p>
+        <nav class="footer-legal" aria-label="Rechtliche Links">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
