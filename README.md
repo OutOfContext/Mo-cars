@@ -1,2 +1,2 @@
-# Mo-cars
-Webpage for mo cars the car detailing company
+# MOCAR
+Webpage for MOCAR, the car detailing company

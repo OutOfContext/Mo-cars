@@ -1,5 +1,5 @@
 /**
- * Mocars – Auto Detailing Moers
+ * MOCAR – Auto Detailing Moers
  * main.js  |  Interactions & Animations
  *
  * Features:
@@ -385,7 +385,8 @@
     initMobileNav();
     initReveal();
     initGallery();
-    initContactForm();
+    // Keep native form submit flow enabled for FormSubmit.
+    // initContactForm();
     initFooterYear();
     initSmoothScroll();
     initNavHighlight();

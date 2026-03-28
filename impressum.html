@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum - MOCAR Auto Detailing</title>
+  <meta name="description" content="Impressum von MOCAR Auto Detailing in Moers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .legal-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: clamp(2rem, 6vw, 5rem) 1rem;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(200, 150, 62, 0.1), transparent 45%),
+        #0b0d12;
+    }
+
+    .legal-card {
+      width: min(760px, 100%);
+      margin: 0 auto;
+      padding: clamp(1.25rem, 3vw, 2.5rem);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.02));
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    .legal-card h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.12;
+      margin-top: 0;
+      margin-bottom: 0.85rem;
+    }
+
+    .legal-card h2 {
+      font-size: clamp(1.35rem, 2.3vw, 2rem);
+      line-height: 1.2;
+      margin-top: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .legal-card h2:first-of-type {
+      margin-top: 0.7rem;
+    }
+
+    .legal-card p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      max-width: 72ch;
+    }
+
+    .legal-card a:not(.btn) {
+      color: #e0b060;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .legal-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 640px) {
+      .legal-links {
+        flex-direction: column;
+      }
+
+      .legal-links .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="legal-page" aria-labelledby="impressum-title">
+    <article class="legal-card">
+      <h1 id="impressum-title">Impressum</h1>
+
+      <h2>Angaben gem&auml;&szlig; 5 TMG</h2>
+      <p>
+        MOCAR Auto Detailing<br />
+        Am Sch&uuml;rmannsh&uuml;tt 38B<br />
+        47441 Moers
+      </p>
+
+      <h2>Kontakt</h2>
+      <p>
+        Telefon: <a href="tel:+4917624244765">+49 176 24244765</a><br />
+        E-Mail: <a href="mailto:info@mocar.nrw">info@mocar.nrw</a>
+      </p>
+
+      <h2>Verantwortlich f&uuml;r den Inhalt</h2>
+      <p>
+        [Bitte Namen der verantwortlichen Person eintragen]<br />
+        Am Sch&uuml;rmannsh&uuml;tt 38B, 47441 Moers
+      </p>
+
+      <h2>Hinweis</h2>
+      <p>
+        Bitte pr&uuml;fen und erg&auml;nzen Sie dieses Impressum um alle gesetzlich notwendigen Angaben
+        (z. B. Rechtsform, Vertretungsberechtigte, USt-IdNr., falls vorhanden).
+      </p>
+
+      <nav class="legal-links" aria-label="Rechtliche Navigation">
+        <a class="btn btn-primary" href="./index.html">Zur Startseite</a>
+        <a class="btn btn-outline" href="./datenschutz.html">Zur Datenschutzerkl&auml;rung</a>
+      </nav>
+    </article>
+  </main>
+</body>
+</html>
+

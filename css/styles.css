@@ -1,5 +1,5 @@
 /* ============================================================
-   Mocars – Auto Detailing Moers
+   MOCAR – Auto Detailing Moers
    styles.css  |  Premium Dark Theme
    ============================================================ */
 
@@ -370,6 +370,37 @@ p {
   margin-top: 2px;
 }
 
+/* Header image logo */
+.logo--image {
+  justify-content: center;
+}
+
+.site-header .logo--with-text {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.site-header .logo-text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.site-header .logo-main {
+  font-size: 1.4rem;
+}
+
+.site-header .logo-tagline {
+  margin-top: 4px;
+}
+
+.logo-image {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* Main Nav */
 .main-nav {
   flex: 1;
@@ -525,60 +556,62 @@ p {
    7. HERO
    ---------------------------------------------------------- */
 .hero {
+  /* Schnell testbare Typo-Varianten ueber .hero-typo-v1/v2/v3 */
+  --hero-headline-font: var(--font-body);
+  --hero-headline-weight: var(--fw-bold);
+  --hero-headline-line-height: 1.05;
+  --hero-headline-letter-spacing: -0.02em;
+  --hero-eyebrow-letter-spacing: var(--ls-wider);
+
   position: relative;
   min-height: 100svh;
   display: flex;
   align-items: center;
   overflow: hidden;
   padding-top: var(--header-height);
+  background: radial-gradient(circle at 75% 45%, rgba(200, 150, 62, 0.08) 0%, rgba(10, 10, 10, 0) 45%);
 }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+/* Variante 1: Sportlich/clean (aktuell aktiv) */
+.hero.hero-typo-v1 {
+  --hero-headline-font: var(--font-body);
+  --hero-headline-weight: var(--fw-bold);
+  --hero-headline-line-height: 1.05;
+  --hero-headline-letter-spacing: -0.02em;
+  --hero-eyebrow-letter-spacing: var(--ls-wider);
 }
 
-.hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  /* Show a dark gradient background if image doesn't load */
-  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+/* Variante 2: Premium/elegant */
+.hero.hero-typo-v2 {
+  --hero-headline-font: var(--font-display);
+  --hero-headline-weight: var(--fw-semibold);
+  --hero-headline-line-height: 1.08;
+  --hero-headline-letter-spacing: -0.015em;
+  --hero-eyebrow-letter-spacing: 0.16em;
 }
 
-/* Fallback gradient when no hero image is present */
-.hero-bg::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, #1c1208 0%, #0a0a0a 60%, #0d1015 100%);
-  z-index: 0;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(10, 10, 10, 0.55) 0%,
-    rgba(10, 10, 10, 0.45) 40%,
-    rgba(10, 10, 10, 0.85) 100%
-  );
-  z-index: 1;
+/* Variante 3: Modern/markant */
+.hero.hero-typo-v3 {
+  --hero-headline-font: var(--font-body);
+  --hero-headline-weight: var(--fw-semibold);
+  --hero-headline-line-height: 1.02;
+  --hero-headline-letter-spacing: -0.035em;
+  --hero-eyebrow-letter-spacing: 0.2em;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+  align-items: center;
+  column-gap: clamp(var(--space-8), 6vw, var(--space-20));
+  row-gap: var(--space-6);
   padding-block: var(--space-20);
 }
 
 .hero-phone {
+  grid-column: 1;
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
@@ -593,23 +626,40 @@ p {
 .hero-phone:hover { opacity: 0.8; }
 
 .hero-text {
+  grid-column: 1;
   max-width: 720px;
+}
+
+.hero-media {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  justify-self: end;
+  width: min(100%, 520px);
+}
+
+.hero-logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 26px rgba(0, 0, 0, 0.5));
 }
 
 .hero-eyebrow {
   font-size: var(--fs-xs);
   font-weight: var(--fw-semibold);
-  letter-spacing: var(--ls-wider);
+  letter-spacing: var(--hero-eyebrow-letter-spacing);
   text-transform: uppercase;
   color: var(--color-accent);
   margin-bottom: var(--space-5);
 }
 
 .hero-headline {
+  font-family: var(--hero-headline-font);
   font-size: clamp(var(--fs-3xl), 7vw, var(--fs-5xl));
-  font-weight: var(--fw-bold);
-  line-height: var(--lh-tight);
-  letter-spacing: var(--ls-tight);
+  font-weight: var(--hero-headline-weight);
+  line-height: var(--hero-headline-line-height);
+  letter-spacing: var(--hero-headline-letter-spacing);
   color: var(--color-text-primary);
   margin-bottom: var(--space-6);
 }
@@ -630,6 +680,7 @@ p {
 
 /* Scroll indicator */
 .scroll-indicator {
+  grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -887,8 +938,25 @@ p {
   stroke: var(--color-accent);
 }
 
-.badge-before { color: var(--color-text-secondary); }
-.badge-after  { color: var(--color-accent); }
+/* Default: "Vorher" highlighted, "Nachher" dimmed */
+.badge-before {
+  color: var(--color-accent);
+  transition: color var(--transition-normal);
+}
+.badge-after {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-normal);
+}
+
+/* Hover / active: "Nachher" highlighted, "Vorher" dimmed */
+.gallery-media:hover .badge-before,
+.gallery-item.is-after .badge-before {
+  color: var(--color-text-secondary);
+}
+.gallery-media:hover .badge-after,
+.gallery-item.is-after .badge-after {
+  color: var(--color-accent);
+}
 
 /* Hint icon (eye) */
 .gallery-hint-icon {
@@ -1535,7 +1603,37 @@ p {
     display: flex;
   }
 
+  .logo-image {
+    height: 48px;
+  }
+
+  .site-header .logo-main {
+    font-size: 1.15rem;
+  }
+
+  .site-header .logo-tagline {
+    display: none;
+  }
+
   /* Hero */
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .hero-phone,
+  .hero-text,
+  .hero-media {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .hero-media {
+    order: 3;
+    justify-self: center;
+    width: min(88vw, 420px);
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: flex-start;
