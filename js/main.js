@@ -378,6 +378,60 @@
   }
 
   /* ----------------------------------------------------------
+     Auto Gallery Slider
+  ---------------------------------------------------------- */
+  function initAutoGallerySlider() {
+    const slider = document.querySelector('.auto-gallery-slider');
+    if (!slider) return;
+
+    const slides = slider.querySelectorAll('.auto-gallery-slide');
+    if (slides.length <= 1) return;
+
+    const interval = parseInt(slider.getAttribute('data-interval'), 10) || 4500;
+    let activeIndex = 0;
+    let timer = null;
+
+    function showSlide(index) {
+      slides.forEach(function (slide, i) {
+        const isActive = i === index;
+        slide.classList.toggle('is-active', isActive);
+        slide.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+      });
+      activeIndex = index;
+    }
+
+    function nextSlide() {
+      const nextIndex = (activeIndex + 1) % slides.length;
+      showSlide(nextIndex);
+    }
+
+    function start() {
+      if (timer) return;
+      timer = window.setInterval(nextSlide, interval);
+    }
+
+    function stop() {
+      if (!timer) return;
+      window.clearInterval(timer);
+      timer = null;
+    }
+
+    slider.addEventListener('mouseenter', stop);
+    slider.addEventListener('mouseleave', start);
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        stop();
+      } else {
+        start();
+      }
+    });
+
+    showSlide(0);
+    start();
+  }
+
+  /* ----------------------------------------------------------
      Init
   ---------------------------------------------------------- */
   ready(function () {
@@ -385,6 +439,7 @@
     initMobileNav();
     initReveal();
     initGallery();
+    initAutoGallerySlider();
     // Keep native form submit flow enabled for FormSubmit.
     // initContactForm();
     initFooterYear();
